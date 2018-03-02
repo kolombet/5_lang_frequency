@@ -20,13 +20,13 @@ def get_most_frequent_words(text):
     counts = {}
     words = text.split()
     counter = collections.Counter(words)
-    return counter.most_common()[0:10]
+    return counter.most_common()[:10]
 
 
 def get_file_path():
     parser = argparse.ArgumentParser()
-    help = "custom text file path"
-    parser.add_argument("-f", "--file", dest="file_path", help="help")
+    parser.add_argument("-f", "--file", dest="file_path",
+                        help="custom text file path")
     args = parser.parse_args()
     file_path = args.file_path
     if file_path is None:
