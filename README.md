@@ -1,6 +1,31 @@
 # Frequency Analysis of Words
 
-[TODO. There will be project description]
+This script searches file _text.txt_ in current working directory and find most used words in it
+
+You can specify input file with parameter -f or --file
+
+# Quickstart
+
+To run this script, you need any text file in utf-8 encoding
+
+Example of script launch on Linux, Python 3.5:
+
+```bash
+
+$ python3 lang_frequency.py 
+и
+в
+не
+что
+он
+на
+с
+как
+его
+я
+
+
+```
 
 # Project Goals
 
