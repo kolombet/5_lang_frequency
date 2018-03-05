@@ -9,19 +9,21 @@ import collections
 def load_data(filepath):
     with codecs.open(filepath, "r", "utf-8") as source_file:
         file_content = source_file.read()
-        source_file.close()
         return file_content
 
 
 def get_most_frequent_words(text, word_count):
-    # somehow string.punctuation don't include &ndash
-    punctuation = string.punctuation + "–"
-    replace_punctuation = str.maketrans(" ", " ", punctuation)
+    punctuation_with_ndash = string.punctuation + "–"
+    replace_punctuation = str.maketrans(" ", " ", punctuation_with_ndash)
     text = text.lower().translate(replace_punctuation)
     counts = {}
     words = text.split()
     counter = collections.Counter(words)
-    return dict(counter.most_common()[:word_count])
+    most_common_words = counter.most_common()[:word_count]
+    most_common_words_list = []
+    for word, count in most_common_words:
+        most_common_words_list.append(word)
+    return most_common_words_list
 
 
 def get_args():
@@ -45,4 +47,4 @@ if __name__ == "__main__":
     most_frequent = get_most_frequent_words(text, word_count)
     print("most frequent words:")
     for word in most_frequent:
-        print("word '{}' - {} times".format(word, most_frequent[word]))
+        print(word)
