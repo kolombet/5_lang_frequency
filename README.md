@@ -6,9 +6,9 @@ You can specify input file with parameter __-f__ or __--file__
 
 # Quickstart
 
-To run this script, you need any text file in utf-8 encoding
+To run this script, you need any text file in __utf-8__ encoding
 
-Example of script launch on Linux, Python 3.5:
+Example of script launch on Linux, __Python 3.5__:
 
 ```bash
 
