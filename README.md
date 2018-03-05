@@ -14,16 +14,16 @@ Example of script launch on Linux, Python 3.5:
 
 $ python3 lang_frequency.py -f text.txt 
 most frequent words:
-word 'и' - 10609 times
-word 'в' - 5307 times
-word 'не' - 4392 times
-word 'что' - 3888 times
-word 'он' - 3813 times
-word 'на' - 3382 times
-word 'с' - 3101 times
-word 'как' - 2133 times
-word 'его' - 1928 times
-word 'я' - 1911 times
+и
+в
+не
+что
+он
+на
+с
+как
+его
+я
 
 
 ```
