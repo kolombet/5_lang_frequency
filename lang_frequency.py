@@ -13,13 +13,13 @@ def load_data(filepath):
 
 
 def get_most_frequent_words(text, word_count):
-    punctuation_with_ndash = string.punctuation + "–"
+    punctuation_with_ndash = "{}-".format(string.punctuation)
     replace_punctuation = str.maketrans(" ", " ", punctuation_with_ndash)
     text = text.lower().translate(replace_punctuation)
     counts = {}
     words = text.split()
     counter = collections.Counter(words)
-    most_common_words = counter.most_common()[:word_count]
+    most_common_words = counter.most_common(word_count)
     most_common_words_list = []
     for word, count in most_common_words:
         most_common_words_list.append(word)
