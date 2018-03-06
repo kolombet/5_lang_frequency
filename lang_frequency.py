@@ -13,7 +13,7 @@ def load_data(filepath):
 
 
 def get_most_frequent_words(text, word_count):
-    punctuation_with_ndash = "{}-".format(string.punctuation)
+    punctuation_with_ndash = "{}–".format(string.punctuation)
     replace_punctuation = str.maketrans(" ", " ", punctuation_with_ndash)
     text = text.lower().translate(replace_punctuation)
     counts = {}
