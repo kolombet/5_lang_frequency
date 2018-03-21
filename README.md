@@ -13,17 +13,17 @@ Example of script launch on Linux, __Python 3.5__:
 ```bash
 
 $ python3 lang_frequency.py -f text.txt 
-most frequent words:
-и
-в
-не
-что
-он
-на
-с
-как
-его
-я
+most frequent words (in descending order):
+the
+and
+he
+to
+of
+i
+in
+you
+a
+his
 
 
 ```
